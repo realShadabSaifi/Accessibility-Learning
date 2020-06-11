@@ -1,0 +1,25 @@
+.header {
+    background-color: darkgreen;
+    text-align: center;
+    color: white;
+}
+
+.footer {
+    border: 1px solid green;
+}
+
+footer nav {
+    padding: 5px;
+}
+
+.footer>h2 {
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 4em;
+    margin-top: 5px;
+}
