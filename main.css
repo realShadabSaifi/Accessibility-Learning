@@ -23,3 +23,7 @@ h1 {
     font-size: 4em;
     margin-top: 5px;
 }
+
+#nav-btn {
+    cursor: pointer;
+}

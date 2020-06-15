@@ -7,14 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="a11y, Accessibility, Web Development">
     <meta name="author" content="Shadab Saifi">
-    <script type="javascript" src="main.js"></script>
+    <script type="text/javascript" src="./lib/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="./lib/css/bootstrap.css">
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="./main.js"></script>
 </head>
 
-<body>
-    <header role="banner" class="header">
+<body class="container-fluid">
+
+    <header role="banner" class="page-header">
         <h1>Accessibility Development - Home</h1>
     </header>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark p-3">
+        <button id="nav-btn" class="btn btn-light" type="button">
+            Menu
+        </button>
+        <ul id="main-nav" class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 4</a>
+            </li>
+        </ul>
+    </nav>
+
     <footer class="footer" role="contentinfo">
         <h2>Footer Start</h2>
         <nav><a href="./views/contact.html">Contact</a></nav>
