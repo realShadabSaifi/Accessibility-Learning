@@ -11,6 +11,33 @@
     <link rel="stylesheet" href="./lib/css/bootstrap.css">
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="./main.js"></script>
+
+    <style>
+        .h3 {
+            font-size: 2rem;
+        }
+
+        .pt-0-cus {
+            padding-top: 0 !important;
+        }
+
+        .a11y-border-tl {
+            border-top-left-radius: 20px;
+        }
+
+        .a11y-border-tr {
+            border-top-right-radius: 20px;
+        }
+
+        .a11y-border-br {
+            border-bottom-right-radius: 20px;
+        }
+
+        .a11y-border-bl {
+            border-bottom-left-radius: 20px;
+        }
+    </style>
+
 </head>
 
 <body class="container-fluid">
@@ -19,25 +46,78 @@
         <h1>Accessibility Development - Home</h1>
     </header>
 
-    <nav class="navbar navbar-expand navbar-dark bg-dark p-3">
-        <button id="nav-btn" class="btn btn-light" type="button">
+    <nav class="navbar navbar-expand navbar-dark bg-success p-3 a11y-border-tl a11y-border-tr">
+        <div id="nav-btn" aria-expanded="true" tabindex="0" class="btn btn-light" type="button">
             Menu
-        </button>
-        <ul id="main-nav" class="navbar-nav">
+        </div>
+        <ul id="main-nav" class="navbar-nav ml-3">
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 1</a>
+                <a class="nav-link text-white h5" href="#">Link 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
+                <a class="nav-link text-white h5" href="#">Link 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 3</a>
+                <a class="nav-link text-white h5" href="#">Link 3</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 4</a>
+                <a class="nav-link text-white h5" href="#">Link 4</a>
             </li>
         </ul>
     </nav>
+
+    <main class="mt-5 mb-5 border border-success a11y-border-bl a11y-border-br">
+
+        <h2 class="p-5">Skills needed</h2>
+        <div class="row p-5 pt-0-cus">
+            <div class="card col-lg col-md-12 col-sm-12 mr-5">
+                <h3 class="card-header h3">
+                    HTML
+                </h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Semantics of HTML</li>
+                    <li class="list-group-item">HTML5 vs HTML 4</li>
+                    <li class="list-group-item">Native HTML tags</li>
+                </ul>
+            </div>
+
+            <div class="card col-lg col-md-12 col-sm-12 mr-5">
+                <h3 class="card-header h3">
+                    HTML
+                </h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Semantics of HTML</li>
+                    <li class="list-group-item">HTML5 vs HTML 4</li>
+                    <li class="list-group-item">Native HTML tags</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row p-5 pt-0-cus">
+            <div class="card col-lg col-md-12 col-sm-12 mr-5">
+                <h3 class="card-header h3">
+                    HTML
+                </h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Semantics of HTML</li>
+                    <li class="list-group-item">HTML5 vs HTML 4</li>
+                    <li class="list-group-item">Native HTML tags</li>
+                </ul>
+            </div>
+
+            <div class="card col-lg col-md-12 col-sm-12 mr-5">
+                <h3 class="card-header h3">
+                    HTML
+                </h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Semantics of HTML</li>
+                    <li class="list-group-item">HTML5 vs HTML 4</li>
+                    <li class="list-group-item">Native HTML tags</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
 
     <footer class="footer" role="contentinfo">
         <h2>Footer Start</h2>

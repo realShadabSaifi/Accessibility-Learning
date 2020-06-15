@@ -7,4 +7,11 @@ window.onload = function () {
         $(this).attr("aria-expanded", $(this).attr("aria-expanded") == "false" ? true : false);
     });
 
+    $("#nav-btn").keydown(function (event) {
+        const keyCode = event.which;
+        if (keyCode == "13") {
+            $(this).click();
+        }
+    });
+
 }
